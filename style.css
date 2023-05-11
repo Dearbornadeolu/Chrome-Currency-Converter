@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(329deg, rgba(2, 0, 36, 1) 0%, rgba(214, 160, 19, 0.38156512605042014) 72%, rgba(0, 212, 255, 0.4319852941176471) 100%);
+   padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;  
+    margin: auto;
+}
+input, button, select{
+    padding: 3px;
+    border-radius: 10px;
+    border: none;
+}
+#result{
+    color: black;
+    font-weight: bolder;
+    font-size: 20px;
+}
