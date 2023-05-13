@@ -9,7 +9,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const apiUrl = "https://api.api-ninjas.com/v1/exchangerate?pair=USD_"
 
     convert.addEventListener("click", () => {
-        console.log('ho')
         const amountTotal = amount.value
         const currencyTotal = currency.value
         const url = apiUrl + currencyTotal
@@ -23,6 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         }).then(response => response.json()).then(data => {
             const rate = data.exchange_rate;
+            console.log(data)
             console.log("rate",rate)
             const resultPrice = amountTotal * rate;
             console.log("result", result)
